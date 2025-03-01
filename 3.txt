@@ -61,6 +61,6 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
 </property>
 </configuration>' > $HADOOP_HOME/etc/hadoop/yarn-site.xml
 hdfs namenode -format
-./start-dfs.sh
-./start-yarn.sh
+start-dfs.sh
+start-yarn.sh
 jps
