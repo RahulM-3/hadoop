@@ -3,4 +3,5 @@ sudo apt update
 sudo apt install openjdk-8-jdk -y
 sudo apt install openssh-server openssh-client -y
 sudo adduser hdoop
+sudo usermod -aG sudo hdoop
 su - hdoop
