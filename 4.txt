@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+hdfs dfs -mkdir /hadooplab
+touch testing.txt
+echo "testing 1\n testing 2" > testing.txt
+hdfs dfs -put testing.txt /hadooplab
+hdfs dfs -du /hadooplab
+hdfs dfs -rm -r /hadooplab
