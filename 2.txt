@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 wget https://dlcdn.apache.org/hadoop/common/hadoop-3.4.0/hadoop-3.4.0.tar.gz
 tar xzf hadoop-3.4.0.tar.gz
+sudo mv hadoop-3.3.6 /usr/local/hadoop
 echo '#Hadoop Related Options
-export HADOOP_HOME=~/hadoop-3.4.0
+export HADOOP_HOME=/usr/local/hadoop
 export HADOOP_INSTALL=$HADOOP_HOME
 export HADOOP_MAPRED_HOME=$HADOOP_HOME
 export HADOOP_COMMON_HOME=$HADOOP_HOME
