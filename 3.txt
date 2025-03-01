@@ -5,7 +5,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 <property>
   <name>hadoop.tmp.dir</name>
-  <value>~/tmpdata</value>
+  <value>/usr/local/hadoop/tmpdata</value>
 </property>
 <property>
   <name>fs.default.name</name>
@@ -17,11 +17,11 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 <property>
   <name>dfs.data.dir</name>
-  <value>~/dfsdata/namenode</value>
+  <value>/usr/local/hadoop/dfsdata/namenode</value>
 </property>
 <property>
   <name>dfs.data.dir</name>
-  <value>~/dfsdata/datanode</value>
+  <value>/usr/local/hadoop/dfsdata/datanode</value>
 </property>
 <property>
   <name>dfs.replication</name>
