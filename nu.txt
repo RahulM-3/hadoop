@@ -7,5 +7,5 @@ tar -xvzf hadoop-3.3.6.tar.gz
 sudo mv hadoop-3.3.6 /usr/local/hadoop
 echo 'export HADOOP_HOME=/usr/local/hadoop
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
-export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))' > .bashrc
-source ~/.bashrc
+export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))' >> .bashrc
+source .bashrc
