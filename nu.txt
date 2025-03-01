@@ -2,6 +2,10 @@
 sudo apt update
 sudo apt install openjdk-8-jdk -y
 sudo apt install openssh-server openssh-client -y
-sudo adduser hdoop
-sudo usermod -aG sudo hdoop
-su - hdoop
+wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz
+tar -xvzf hadoop-3.3.6.tar.gz
+sudo mv hadoop-3.3.6 /usr/local/hadoop
+echo 'export HADOOP_HOME=/usr/local/hadoop
+export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
+export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))' > .bashrc
+source ~/.bashrc
